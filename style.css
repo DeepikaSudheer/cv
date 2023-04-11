@@ -15,7 +15,6 @@ body {
 .parent {
 	margin: 10px auto;
 	max-width: 70rem;
-	background-color: var(--color-gray-light-2);
 	box-shadow: 0px 0px 15px 4px #b3b3b3;
 }
 .child {
@@ -23,86 +22,16 @@ body {
   padding: 0 10 0 10px;
 }
 .child1 {
+	padding: 10 10 10 10px;
   display: inline-block;
-  padding: 10 10 10 10px;
 }
 .table_exp, th {
-
   border-collapse: collapse;
 }
 .table_skill, th{
   border: 0;
   border-collapse: collapse;
 	text-align: left;
-}
-.timeline-block {
-	position: relative;
-	padding-left: 30px;
-}
-.timeline-block:not(:last-of-type) {
-	margin-bottom: 1rem;
-}
-.timeline-block h1 {
-	font-size: 1rem;
-	margin: 5px 0;
-	transition: all 0.3s;
-}
-.timeline-block p {
-	font-size: 0.8rem;
-	margin: 5px 0;
-}
-.timeline-block time {
-	font-size: 0.8rem;
-	color: var(--color-gray-dark-2);
-}
-.timeline-block::before {
-	position: absolute;
-	content: '';
-	width: 15px;
-	height: 15px;
-	background-color: white;
-	border: 3px solid var(--timeline-circle-theme);
-	border-radius: 50%;
-	left: -10px;
-	top: -5px;
-}
-.timeline-block::after {
-	position: absolute;
-	content: '';
-	width: 3px;
-	height: 100%;
-	background-color: var(--timeline-circle-theme);
-	left: -1px;
-	top: 13px;
-}
-/* links section */
-.detail-content {
-	padding: 1rem;
-	padding-left: 2rem;
-	user-select: none;
-}
-.detail-content {
-	padding-left: calc(1.5rem + 10px);
-}
-.favor-list {
-	display: flex;
-	flex-wrap: wrap;
-	align-items: center;
-	align-content: center;
-}
-.favor-list > li {
-	display: flex;
-	flex: 1 0 0;
-	align-items: center;
-	justify-content: baseline;
-	flex-direction: column;
-	padding: 1rem 0;
-	transition: all 0.3s;
-  font-weight: bold;
-}
-.favor-list > li:hover {
-	transform: scale(1.2);
-	color: var(--color-tiffany);
 }
 input[type=submit], input[type=button]{
   background-color: #34a1eb;
@@ -115,4 +44,68 @@ input[type=submit], input[type=button]{
 }
 a{
     text-decoration: none;
+}
+/*Education*/
+.education {
+	padding: 1rem;
+	padding-left: 2rem;
+	user-select: none;
+}
+.education_circle {
+	position: relative;
+	padding-left: 30px;
+}
+.education_circle h1 {
+	font-size: 1rem;
+	margin: 5px 0;
+	transition: all 0.3s;
+}
+.education_circle p {
+	font-size: 0.8rem;
+	margin: 5px 0;
+}
+.education_circle time {
+	font-size: 0.8rem;
+	color: var(--color-gray-dark-2);
+}
+.education_circle::before {
+	position: absolute;
+	content: '';
+	width: 15px;
+	height: 15px;
+	background-color: white;
+	border: 3px solid var(--timeline-circle-theme);
+	border-radius: 50%;
+	left: -10px;
+	top: -5px;
+}
+.education_circle::after {
+	position: absolute;
+	content: '';
+	width: 3px;
+	height: 100%;
+	background-color: var(--timeline-circle-theme);
+	left: -1px;
+	top: 13px;
+}
+/* hobbies section */
+.hobbies_list {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+}
+.hobbies_list > li {
+	display: flex;
+	flex: 1 0 0;
+	align-items: center;
+	justify-content: baseline;
+	flex-direction: column;
+	padding: 1rem 0;
+	transition: all 0.3s;
+  font-weight: bold;
+}
+.hobbies_list> li:hover {
+	transform: scale(1.2);
+	color: var(--color-tiffany);
 }
